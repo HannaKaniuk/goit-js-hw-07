@@ -23,12 +23,12 @@ function createGalleryMarkup(items) {
 
 const addGalleryMarkup = createGalleryMarkup(galleryItems);
 
-galleryList.innerHTML = addGalleryMarkup; // Use galleryList instead of divRef
+galleryList.innerHTML = addGalleryMarkup; 
 
 galleryList.addEventListener("click", onImageClick);
 
 function onImageClick(evt) {
-    evt.preventDefault(); // Prevent the default action of anchor tags
+    evt.preventDefault(); 
 
     if (evt.target.nodeName !== "IMG") {
         return;
